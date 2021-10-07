@@ -9,9 +9,10 @@
    
    <script type="text/javascript">
    $(document).ready(function(){
-
+      search()
    });
    const tag = 'test'
+   let searchResult = {}
    function search () {
      $.ajax({
         url: `https://www.instagram.com/explore/tags/${tag}/?__a=1`,
@@ -19,6 +20,7 @@
      }).done(function( result ) {
         console.log(result)
         console.log(result['graphql']['hashtag']['edge_hashtag_to_media']['edges'])
+        console.log(`https://www.instagram.com/p/${result['graphql']['hashtag']['edge_hashtag_to_media']['edges'][0]['node']['shortcode']}`)
      });
    }
    </script>
