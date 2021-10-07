@@ -1,0 +1,14 @@
+
+   
+<html>
+  <script src="https://js.tosspayments.com/v1"></script>
+<script type="text/javascript">
+var clientKey = 'test_ck_OEP59LybZ8Bdv6A1JxkV6GYo7pRe'
+var tossPayments = TossPayments(clientKey)
+tossPayments.requestBillingAuth('카드', {
+  customerKey: 'aENcQAtPdYbTjGhtQnNVj',
+  successUrl: window.location.origin + '/success',
+  failUrl: window.location.origin + '/fail'
+})
+</script>
+</html>
