@@ -1,13 +1,29 @@
 
    
 <html>
+   <head>
   <script
   src="https://code.jquery.com/jquery-3.6.0.js"
   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
   crossorigin="anonymous"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-alert('hi - reday');
-});
-</script>
+   
+   <script type="text/javascript">
+   $(document).ready(function(){
+
+   });
+   const tag = 'test'
+   function search () {
+     $.ajax({
+        url: `https://www.instagram.com/explore/tags/${tag}/?__a=1`,
+        method: "GET",
+     }).done(function( result ) {
+        console.log(result)
+        console.log(result['graphql']['hashtag']['edge_hashtag_to_media']['edges'])
+     });
+   }
+   </script>
+   </head>
+   <body>
+      <input type="text"/>
+   </body>
 </html>
