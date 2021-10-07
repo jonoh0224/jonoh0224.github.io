@@ -1,9 +1,6 @@
 <html>
+  <script src="https://js.tosspayments.com/v1"></script>
 <script type="text/javascript">
-var s = document.createElement("script");
-s.type = "text/javascript";
-s.src = "https://js.tosspayments.com/v1";
-$("head").append(s);
 var clientKey = 'test_ck_OEP59LybZ8Bdv6A1JxkV6GYo7pRe'
 var tossPayments = TossPayments(clientKey)
 tossPayments.requestBillingAuth('카드', {
