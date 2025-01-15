@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jonoh0224.github.io/static/css/main.6200da01.css",
+    "main.js": "/jonoh0224.github.io/static/js/main.82eda04f.js",
+    "index.html": "/jonoh0224.github.io/index.html",
+    "main.6200da01.css.map": "/jonoh0224.github.io/static/css/main.6200da01.css.map",
+    "main.82eda04f.js.map": "/jonoh0224.github.io/static/js/main.82eda04f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6200da01.css",
+    "static/js/main.82eda04f.js"
+  ]
+}
