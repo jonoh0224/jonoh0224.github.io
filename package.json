@@ -1,7 +1,7 @@
 {
   "name": "tooltip-generator",
   "version": "0.1.0",
-  "homepage": "https://jonoh0224.github.io/jonoh0224.github.io",
+  "homepage": "https://jonoh0224.github.io",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
